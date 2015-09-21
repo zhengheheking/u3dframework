@@ -1,0 +1,9 @@
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\bin\Debug\ExcelConfigExport.exe.config
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\bin\Debug\ExcelConfigExport.exe
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\bin\Debug\ExcelConfigExport.pdb
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\obj\Debug\ExcelConfigExport.csprojResolveAssemblyReference.cache
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\obj\Debug\ExcelConfigExport.Properties.Resources.resources
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\obj\Debug\ExcelConfigExport.csproj.GenerateResource.Cache
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\obj\Debug\ExcelConfigExport.exe
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\obj\Debug\ExcelConfigExport.pdb
+F:\work\Code\Client\ExcelConfigExport\ExcelConfigExport\obj\Debug\ExcelConfigExport.Form1.resources

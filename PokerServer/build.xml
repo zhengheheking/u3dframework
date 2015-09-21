@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="FishingServer" default="jar" basedir=".">
+	<property name="src" location="src" />
+	<property name="bin" location="bin" />
+	<property name="lib" location="${basedir}/lib" />
+	<property name="parent_dir" location="${basedir}/../" />
+	<property name="build" location="build" />
+	<property name="build.classes" location="${build}/classes" />
+	<property name="build.libs" location="${build}/lib" />
+	<property name="main.jar.name" value="fishing.jar" />
+	<property name="main.class" value="threads.GameServer" />
+	
+	<tstamp> 
+		<format property="buildtime" pattern="yyyyMMddHHmm" /> 
+	</tstamp> 
+
+
+	<path id="common.classpath">
+		<fileset dir="${lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="verifyRequirements" description="Checks if the necessary requirements for building L2J are fulfilled">
+		<available classname="javax.script.ScriptContext" property="JDK7.present" />
+		<fail unless="JDK7.present" message="JDK 7 or greater is required." />
+	</target>
+
+	<target name="init" depends="clean, verifyRequirements" description="Create the output directories.">
+		<tstamp/> 
+		<mkdir dir="${build}" />
+		<mkdir dir="${build.classes}" />
+	</target>
+
+	<target name="compile" depends="init" description="Compile the source.">
+		<javac destdir="${build.classes}" optimize="on" debug="true" source="1.7" target="1.7" nowarn="on" includeantruntime="on">
+			<compilerarg line="-encoding UTF-8" />
+			<src path="${src}" />
+			<classpath refid="common.classpath" />
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile" description="Create the jar file">
+
+		<pathconvert property="mf.classpath" pathsep=" " description="create mf classpath string">
+			<mapper>
+				<chainedmapper>
+					<!-- bb -->
+					<flattenmapper  />
+					<!-- cc -->
+					<globmapper from="*" to="gameserver_lib/*"  />
+				</chainedmapper>
+			</mapper>
+			<path refid="common.classpath" description="source classpath" />
+		</pathconvert>
+
+		<jar compress="true" destfile="${basedir}/${main.jar.name}">
+			<fileset dir="${build.classes}">
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Built-Date" value="${buildtime}" />
+				<attribute name="Class-Path" value="${mf.classpath}" />
+				<attribute name="Main-Class" value="${main.class}" />
+			</manifest>
+		</jar>
+		<delete dir="${build}" ></delete>
+	</target>
+
+	<target name="clean" description="Remove the output directories">
+		<delete dir="${build}" />
+	</target>
+</project>

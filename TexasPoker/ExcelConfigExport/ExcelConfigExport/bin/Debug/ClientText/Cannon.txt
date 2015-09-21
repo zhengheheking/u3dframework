@@ -1,0 +1,4 @@
+CannonId	CannonName	BulletId	BulletScoreMin	BulletScoreMax
+1	小鱼炮	1	0	2000
+2	中鱼炮	1	2000	6000
+3	大鱼炮	1	6000	65535

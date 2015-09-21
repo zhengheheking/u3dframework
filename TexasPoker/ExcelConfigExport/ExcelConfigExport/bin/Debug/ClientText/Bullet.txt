@@ -1,0 +1,4 @@
+BulletId	HitRate	PrefebName
+1	50	Bullet1.prefab
+2	50	Bullet2.prefab
+3	50	Bullet3.prefab

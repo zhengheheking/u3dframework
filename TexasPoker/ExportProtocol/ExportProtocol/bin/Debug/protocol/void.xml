@@ -1,0 +1,15 @@
+<!--场景模块 -->
+<Module id="1">
+	<!-- 客户端发送 -->
+	<Requester>
+		 
+
+	</Requester>
+
+
+	<!-- 服务端返回 -->
+	<Responder>
+	 
+	</Responder>
+</Module>
+ 

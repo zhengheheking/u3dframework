@@ -1,0 +1,6 @@
+F:\work\ExportProtocol\ExportProtocol\bin\Debug\ExportProtocol.exe.config
+F:\work\ExportProtocol\ExportProtocol\bin\Debug\ExportProtocol.exe
+F:\work\ExportProtocol\ExportProtocol\bin\Debug\ExportProtocol.pdb
+F:\work\ExportProtocol\ExportProtocol\obj\Debug\ExportProtocol.csprojResolveAssemblyReference.cache
+F:\work\ExportProtocol\ExportProtocol\obj\Debug\ExportProtocol.exe
+F:\work\ExportProtocol\ExportProtocol\obj\Debug\ExportProtocol.pdb

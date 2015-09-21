@@ -1,0 +1,6 @@
+ShowId	ScoreMin	ScoreMax	GoldMin	GoldMax
+1	0	5	1	2
+2	5	10	2	3
+3	10	15	3	4
+4	15	100	4	5
+5	100	65535	5	6

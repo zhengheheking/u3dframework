@@ -1,0 +1,10 @@
+package comm;
+
+public class ModuleEnum {
+    public static final byte PASSPORT = 1, SCENE = 2, PROP = 3, SKILL = 4,
+            USER_DATA = 5, TEAM = 6, SOCIAL = 7, GAME_TIP = 8, GANG = 9,
+            BANK = 10, TALK = 11, GM = 12, TREASURE = 13,ARENA=14,WELFARE=15, 
+            SABAC = 16,GANG_WAR = 17,SPEC_RANK = 18,PET=19,PKKING = 20,PITCH = 21,REWARD = 22,OPENSERVICE_ACT = 26,
+            SPEC_ACT=25,BATTLE=27,CAMPAING=28,FIGHT_POINT = 29,TARGET = 30,CLIMB_TOWER =31,
+            HTTP_HEAD = 47, FLASH_PLAYER = 105,GAME_ROBOT=108, SERVER_CONTROL = 127;
+}

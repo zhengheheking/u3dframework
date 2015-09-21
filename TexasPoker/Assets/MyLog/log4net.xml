@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<log4net>
+    <!-- This is a nice file appender for directly checking what's    -->
+    <!-- happening in the Game. Its timestamps based on milliseconds  --> 
+    <!-- which makes it suitable for monitoring single game sessions. -->
+    <!-- It also does not append to file and instead empties the file -->
+    <!-- each game session, so you always "start fresh".              -->
+    <appender name="FileAppender" type="log4net.Appender.FileAppender">
+        <!-- TODO: Change file path according to your setup! -->
+        <file value="./log/current.log" />
+        <appendToFile value="false" />
+        <layout type="log4net.Layout.PatternLayout">
+            <conversionPattern value="[%6rms] %-5level %-10logger - %message%newline" />
+        </layout>
+    </appender>
+
+    <!-- This appender is more for server applications / game servers -->
+    <!-- It appends to file, so many sessions are stored in one file. -->
+    <!-- To avoid huge files, a rolling file appender is used that    --> 
+    <!-- starts a new file every day. Timestamps are logged in a      -->
+    <!-- common hour / minute / seconds format.                       -->
+    <appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+        <!-- TODO: Change file path according to your setup! -->
+        <file value="./log/continuous.log" />
+        <appendToFile value="true" />
+        <rollingStyle value="Date" />
+        <datePattern value="yyyyMMdd" />
+        <layout type="log4net.Layout.PatternLayout">
+            <conversionPattern value="%date{HH:mm:ss,fff} %-5level %-10logger - %message%newline" />
+        </layout>
+    </appender>
+    
+
+    
+    <!-- This configures the loggers. DEBUG is good for development   --> 
+    <!-- and testing. Use INFO for production.                        -->
+    <root>
+        <level value="ALL" />
+        <appender-ref ref="FileAppender"  />
+        <appender-ref ref="RollingFileAppender" />
+
+    </root>
+
+    <!-- This is project-specific but can be used as an example on how to -->
+    <!-- silence logging of specific classes.                             -->
+    <!-- 这里可以指定某个类，或者某个命名空间下的类的输出级别 -->
+    <logger name="ExampleXXX.XXX">
+        <level value="ALL" />
+    </logger>
+    
+    <!-- 下面两个配置对MyLogTestExample1类输出级别是全部输出，对MyLogTestExample2类级别是WARN以上的级别才输出，可以在示例两个场景中观察两者的不同 -->
+    <logger name="Log">
+        <level value="ALL" />
+    </logger>
+	
+	<logger name="MyLogTestExample2">
+        <level value="WARN" />
+    </logger>
+    
+	<!--log4net日志输出级别 从全部输出到全部关闭 ALL DEBUG INFO WARN ERROR  FATAL OFF -->
+    <!--xml的详细配置 请查阅log4net官方文档 -->    
+</log4net>

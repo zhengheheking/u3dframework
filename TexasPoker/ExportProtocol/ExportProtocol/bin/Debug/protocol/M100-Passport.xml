@@ -1,0 +1,24 @@
+<Module id="100">
+	<Requester>
+		<Login>
+			<serverid type="int" />
+			<uid type="int" />
+		</Login>
+		<Heart />
+		<CreateRole>
+			<name type="string" />
+			<sex type="byte" />
+			<job type="byte" />
+		</CreateRole>
+		<InitGame />
+	</Requester>
+	<Responder>
+		<Login>
+			<hasRole type="byte" />
+		</Login>
+		<InitGame>
+			<mainMissionID type="short" />
+		</InitGame>
+	</Responder>
+</Module>
+ 

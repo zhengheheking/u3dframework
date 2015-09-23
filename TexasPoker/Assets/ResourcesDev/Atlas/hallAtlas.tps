@@ -2,7 +2,7 @@
 <data version="1.0">
     <struct type="Settings">
         <key>fileFormatVersion</key>
-        <int>0</int>
+        <int>1</int>
         <key>variation</key>
         <string>main</string>
         <key>verbose</key>
@@ -243,6 +243,8 @@
             <filename>../../UIResources/hall/hall_function_girl.png</filename>
             <filename>../../UIResources/hall/hall_function_girl_eye_close.png</filename>
             <filename>../../UIResources/hall/hall_function_girl_eye_half.png</filename>
+            <filename>../../UIResources/hall/progressbar_bg.png</filename>
+            <filename>../../UIResources/hall/progressbar_progress.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

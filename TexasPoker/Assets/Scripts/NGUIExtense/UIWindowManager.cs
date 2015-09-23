@@ -7,6 +7,7 @@ using Client.Base;
 public enum EUIPanel
 {
     UILogin,
+    UIHall,
 }
 //An Manager To Manage All UI And Window
 public class UIWindowManager : Singleton<UIWindowManager>

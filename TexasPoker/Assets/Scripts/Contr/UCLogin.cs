@@ -10,12 +10,12 @@ namespace Contr
     {
         public UCLogin()
         {
-            GameDispatcher.Instance.addEventListener(OnLoginSuccess, GameEvents.LOGIN_SUCCESS);
+            GameDispatcher.Instance.addEventListener(OnLoginClick, GameEvents.LOGIN_CLICK);
             
         }
-        private void OnLoginSuccess(string evt, params object[] args)
+        private void OnLoginClick(string evt, params object[] args)
         {
-            
+            SceneManager.Instance.LoadScene("Hall", ESceneType.HallScene);
         }
         
     }

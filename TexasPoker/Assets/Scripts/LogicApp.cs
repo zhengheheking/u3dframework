@@ -10,6 +10,7 @@ using Contr;
 using GameLogic;
 using Configs;
 using Events;
+using Client.Base;
 
 public enum GameState
 {
@@ -53,6 +54,7 @@ class LogicApp : MonoBehaviour
             TouchManager.Instance.Loop();
         }
         UIWindowManager.Instance.Update();
+        TimerManager.Instance.Update();
 
     }
     void FixedUpdate()

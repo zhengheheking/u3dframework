@@ -125,13 +125,13 @@ public class ResourceManager : Singleton<ResourceManager>,Controller
                 {
                     yield return CoroutineManager.StartCoroutine(ResourceManager.Instance.LoadDepend(PathURL + ab.ABDepend));
                     m_LoadedRes++;
-                    GameDispatcher.Instance.dispatchEvent(GameEvents.RES_LOADED);
+                   // GameDispatcher.Instance.dispatchEvent(GameEvents.RES_LOADED);
                 }
                 if(ab.AB != "null")
                 {
                     yield return CoroutineManager.StartCoroutine(ResourceManager.Instance.LoadPackage(PathURL + ab.AB, i));
                     m_LoadedRes++;
-                    GameDispatcher.Instance.dispatchEvent(GameEvents.RES_LOADED);
+                    //GameDispatcher.Instance.dispatchEvent(GameEvents.RES_LOADED);
                 }
             }
             yield return 0;

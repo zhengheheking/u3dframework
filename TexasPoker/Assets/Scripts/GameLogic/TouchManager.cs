@@ -31,35 +31,35 @@ public class TouchManager:Singleton<TouchManager>
         if (Time.realtimeSinceStartup - m_ClickTime>= 60)
         {
             m_ClickTime = Time.realtimeSinceStartup + 60;
-            GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, true);
+            //GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, true);
         }
         if ((Input.GetKey(KeyCode.UpArrow) || Input.GetAxis("Mouse ScrollWheel") > 0) && Time.time >= m_LastUpCannonScoreTime)
         {
             m_ClickTime = Time.realtimeSinceStartup;
-            GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
+            //GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
            
-            GameDispatcher.Instance.dispatchEvent(GameEvents.CHANGE_CANNON_SCORE, 1);
+            //GameDispatcher.Instance.dispatchEvent(GameEvents.CHANGE_CANNON_SCORE, 1);
         }
         if ((Input.GetKey(KeyCode.DownArrow) || Input.GetAxis("Mouse ScrollWheel") < 0) && Time.time >= m_LastDownCannonScoreTime)
         {
             m_ClickTime = Time.realtimeSinceStartup;
-            GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
+            //GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
            
-            GameDispatcher.Instance.dispatchEvent(GameEvents.CHANGE_CANNON_SCORE, 0);
+            //GameDispatcher.Instance.dispatchEvent(GameEvents.CHANGE_CANNON_SCORE, 0);
         }
         if (Input.GetKey(KeyCode.LeftArrow) && Time.time >= m_LastUpScoreTime)
         {
             m_ClickTime = Time.realtimeSinceStartup;
-            GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
+           // GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
             
-            GameDispatcher.Instance.dispatchEvent(GameEvents.UP_SCORE);
+           // GameDispatcher.Instance.dispatchEvent(GameEvents.UP_SCORE);
         }
         if (Input.GetKey(KeyCode.RightArrow) && Time.time >= m_LastDownScoreTime)
         {
             m_ClickTime = Time.realtimeSinceStartup;
-            GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
+            //GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
             
-            GameDispatcher.Instance.dispatchEvent(GameEvents.DOWM_SCORE);
+           // GameDispatcher.Instance.dispatchEvent(GameEvents.DOWM_SCORE);
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -80,7 +80,7 @@ public class TouchManager:Singleton<TouchManager>
 			if (Physics.Raycast(ray,out hit, 100))
             {
                 m_ClickTime = Time.realtimeSinceStartup;
-                GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
+               // GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
 				if (hit.transform.tag!="GUI")
                 {
 					
@@ -94,7 +94,7 @@ public class TouchManager:Singleton<TouchManager>
             if (Physics.Raycast(ray, out hit))
             {
                 m_ClickTime = Time.realtimeSinceStartup;
-                GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
+              //  GameDispatcher.Instance.dispatchEvent(GameEvents.TIP_SHOW, false);
                 if (hit.transform.tag == "Fish")
                 {
                     

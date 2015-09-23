@@ -34,7 +34,7 @@ public class LogicWorld:Singleton<LogicWorld>,Controller
 
     public void Update()
     {
-        TimerManager.Instance.Update();
+        
     }
     public void FixedUpdate()
     {

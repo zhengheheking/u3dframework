@@ -51,11 +51,17 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -221,6 +227,7 @@
     <Compile Include="Assets\Scripts\Configs\CfgAB.cs" />
     <Compile Include="Assets\Scripts\Configs\Config.cs" />
     <Compile Include="Assets\Scripts\Contr\Controller.cs" />
+    <Compile Include="Assets\Scripts\Contr\UCHall.cs" />
     <Compile Include="Assets\Scripts\Contr\UCLogin.cs" />
     <Compile Include="Assets\Scripts\Events\GameDispatcher.cs" />
     <Compile Include="Assets\Scripts\Events\GameEvents.cs" />
@@ -258,6 +265,7 @@
     <Compile Include="Assets\Scripts\Util\FPS.cs" />
     <Compile Include="Assets\Scripts\Util\TabFile.cs" />
     <Compile Include="Assets\Scripts\Util\Utils.cs" />
+    <Compile Include="Assets\Scripts\View\UIHall.cs" />
     <Compile Include="Assets\Scripts\View\UILogin.cs" />
   </ItemGroup>
   <ItemGroup>

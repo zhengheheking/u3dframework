@@ -23,7 +23,7 @@ namespace View
         }
         private void OnLoginClick()
         {
-            
+            GameDispatcher.Instance.dispatchEvent(GameEvents.LOGIN_CLICK);
         }
         private void OnWeixinBtnClick()
         {

@@ -7,8 +7,7 @@ namespace GameLogic
     public enum ESceneType
     {
         LoginScene,
-        SelectScene,
-        FishScene,
+        HallScene,
     }
     public class SceneManager : Singleton<SceneManager>, Controller
     {
@@ -36,15 +35,16 @@ namespace GameLogic
         public void OnLevelLoaded()
         {
             IsLoading = false;
-            if(LoadedSceneType == ESceneType.SelectScene)
+            if (LoadedSceneType == ESceneType.HallScene)
             {
-            
+                UIWindowManager.Instance.CreateWindow<UCHall>(EUIPanel.UIHall);
+                UIWindowManager.Instance.GetUIWindow(EUIPanel.UIHall).ShowWindow();
             }
-            if(LoadedSceneType == ESceneType.FishScene)
-            {
-                LogicApp.Instance.InitGameState();
-                //Debug.Log(Screen.width + " " + Screen.height);
-            }
+            //if(LoadedSceneType == ESceneType.FishScene)
+            //{
+           //     LogicApp.Instance.InitGameState();
+           //     //Debug.Log(Screen.width + " " + Screen.height);
+           // }
         }
 
 

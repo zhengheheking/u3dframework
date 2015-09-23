@@ -1,0 +1,84 @@
+{"frames": {
+
+"login_baselogo.png":
+{
+	"frame": {"x":2,"y":2,"w":402,"h":111},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":402,"h":111},
+	"sourceSize": {"w":402,"h":111}
+},
+"login_bgp.jpg":
+{
+	"frame": {"x":406,"y":2,"w":1280,"h":720},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1280,"h":720},
+	"sourceSize": {"w":1280,"h":720}
+},
+"login_butbg.png":
+{
+	"frame": {"x":1688,"y":2,"w":127,"h":39},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":39},
+	"sourceSize": {"w":127,"h":39}
+},
+"login_fankui.png":
+{
+	"frame": {"x":1817,"y":2,"w":51,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":50},
+	"sourceSize": {"w":51,"h":50}
+},
+"login_girl.png":
+{
+	"frame": {"x":2,"y":724,"w":766,"h":720},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":766,"h":720},
+	"sourceSize": {"w":770,"h":720}
+},
+"login_guest.png":
+{
+	"frame": {"x":770,"y":724,"w":388,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":388,"h":128},
+	"sourceSize": {"w":388,"h":128}
+},
+"login_help.png":
+{
+	"frame": {"x":1160,"y":724,"w":29,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":29,"h":32},
+	"sourceSize": {"w":31,"h":32}
+},
+"logo_sina_transparent.png":
+{
+	"frame": {"x":1191,"y":724,"w":38,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":4,"w":38,"h":32},
+	"sourceSize": {"w":40,"h":40}
+},
+"logo_weixin_transparent.png":
+{
+	"frame": {"x":1231,"y":724,"w":40,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":40,"h":34},
+	"sourceSize": {"w":40,"h":40}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "loginAtlas.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a5e9db5b77816e8638165cde9c1d6024$"
+}
+}

@@ -39,7 +39,8 @@ class LogicApp : MonoBehaviour
         yield return CoroutineManager.StartCoroutine(SpawnPool.Instance.Init());
         m_GameState = GameState.MAIN_UI;
 
-
+        UIWindowManager.Instance.CreateWindow<UCLogin>(EUIPanel.UILogin);
+        UIWindowManager.Instance.GetUIWindow(EUIPanel.UILogin).ShowWindow();
         yield return null;
     }
 

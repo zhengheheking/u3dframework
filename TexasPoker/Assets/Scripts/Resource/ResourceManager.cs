@@ -218,7 +218,7 @@ public class ResourceManager : Singleton<ResourceManager>,Controller
             || loadBundleModel == null)		//Load Directly
         {
             //return (Resources.Load(name, typeof(T)) as T);
-            string assetPath = "Assets/FishingGame/ResourcesDev/" + Convert.ToString(index) + "/"+name;
+            string assetPath = "Assets/ResourcesDev/" + Convert.ToString(index) + "/"+name;
             return UnityEditor.AssetDatabase.LoadMainAssetAtPath(assetPath) as T;
         }
         else //Load From Bundle Asset

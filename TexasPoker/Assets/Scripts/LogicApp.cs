@@ -19,6 +19,7 @@ public enum GameState
 class LogicApp : MonoBehaviour
 {
     public static LogicApp Instance { get; private set; }
+    [HideInInspector]
     public GameState m_GameState;
 
     public void Start()

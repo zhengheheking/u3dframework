@@ -230,6 +230,7 @@
     <Compile Include="Assets\Scripts\GameLogic\GameStateEnum.cs" />
     <Compile Include="Assets\Scripts\GameLogic\LogicWorld.cs" />
     <Compile Include="Assets\Scripts\GameLogic\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\Splash.cs" />
     <Compile Include="Assets\Scripts\GameLogic\TouchManager.cs" />
     <Compile Include="Assets\Scripts\LogicApp.cs" />
     <Compile Include="Assets\Scripts\Model\LiveThingVo.cs" />
@@ -307,6 +308,8 @@
     <None Include="Assets\MyLog\Log4netLibForMono2.0\System.Web.dll_version_is_mono_2.0_from_Mono_official_package.txt" />
     <None Include="Assets\MyLog\Log4netLibForMono2.0\log4netdll_version_is_1.2.13forMono2.0.txt" />
     <None Include="Assets\MyLog\log4net.xml" />
+    <None Include="Assets\ResourcesDev\Atlas\loginAtlas.txt" />
+    <None Include="Assets\ResourcesDev\Atlas\logoAtlas.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

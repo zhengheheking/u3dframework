@@ -8,6 +8,8 @@ public enum EUIPanel
 {
     UILogin,
     UIHall,
+    UIHallList,
+    UIPrivateRoom,
 }
 //An Manager To Manage All UI And Window
 public class UIWindowManager : Singleton<UIWindowManager>

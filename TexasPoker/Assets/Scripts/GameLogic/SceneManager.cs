@@ -38,6 +38,8 @@ namespace GameLogic
             if (LoadedSceneType == ESceneType.HallScene)
             {
                 UIWindowManager.Instance.CreateWindow<UCHall>(EUIPanel.UIHall);
+                UIWindowManager.Instance.CreateWindow<UCHallList>(EUIPanel.UIHallList);
+                UIWindowManager.Instance.CreateWindow<UCPrivateRoom>(EUIPanel.UIPrivateRoom);
                 UIWindowManager.Instance.GetUIWindow(EUIPanel.UIHall).ShowWindow();
             }
             //if(LoadedSceneType == ESceneType.FishScene)

@@ -56,7 +56,7 @@
             <key>width</key>
             <int>4096</int>
             <key>height</key>
-            <int>2048</int>
+            <int>4096</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
@@ -245,6 +245,28 @@
             <filename>../../UIResources/hall/hall_function_girl_eye_half.png</filename>
             <filename>../../UIResources/hall/progressbar_bg.png</filename>
             <filename>../../UIResources/hall/progressbar_progress.png</filename>
+            <filename>../../UIResources/hall/private_help_icon.png</filename>
+            <filename>../../UIResources/hall/private_room_icon.png</filename>
+            <filename>../../UIResources/hall/private_room_title.png</filename>
+            <filename>../../UIResources/hall/privateroom_bg.jpg</filename>
+            <filename>../../UIResources/hall/privateroom_item_number_bg.png</filename>
+            <filename>../../UIResources/hall/privateroom_item_table.png</filename>
+            <filename>../../UIResources/hall/privateroom_search_bg.png</filename>
+            <filename>../../UIResources/hall/privateroom_search_icon.png</filename>
+            <filename>../../UIResources/hall/privateroom_title_bg.png</filename>
+            <filename>../../UIResources/hall/room_red_btn.png</filename>
+            <filename>../../UIResources/hall/zhongji_bg.jpg</filename>
+            <filename>../../UIResources/hall/zhongji_qs.png</filename>
+            <filename>../../UIResources/hall/zhongji_selected_bg.png</filename>
+            <filename>../../UIResources/hall/zhongji_unselected_bg.png</filename>
+            <filename>../../UIResources/hall/chuji_unselected_bg.png</filename>
+            <filename>../../UIResources/hall/gaoji_bg.jpg</filename>
+            <filename>../../UIResources/hall/gaoji_qs.png</filename>
+            <filename>../../UIResources/hall/gaoji_selected_bg.png</filename>
+            <filename>../../UIResources/hall/gaoji_unselected_bg.png</filename>
+            <filename>../../UIResources/hall/chuji_bg.jpg</filename>
+            <filename>../../UIResources/hall/chuji_qs.png</filename>
+            <filename>../../UIResources/hall/chuji_selected_bg.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

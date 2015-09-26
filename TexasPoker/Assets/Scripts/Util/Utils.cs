@@ -147,7 +147,14 @@ public class Utils
 		go.transform.localScale = original.transform.localScale;
 		return go;
 	}
-	
+    public static Rect NGUIObjectToRect(GameObject go)
+    {
+        Camera camera = NGUITools.FindCameraForLayer(go.layer);
+        Bounds bounds = NGUIMath.CalculateAbsoluteWidgetBounds(go.transform);
+        Vector3 min = camera.WorldToScreenPoint(bounds.min);
+        Vector3 max = camera.WorldToScreenPoint(bounds.max);
+        return new Rect(min.x, min.y, max.x - min.x, max.y - min.y);
+    }
 	public static void SetLayer(GameObject go, int layer)
 	{
 		Transform[] trans = go.GetComponentsInChildren<Transform>(true);
@@ -427,5 +434,13 @@ public class Utils
             list.Add(pos);
         }
         return list;
+    }
+    public static void ClearAllChild(GameObject parentObj)
+    {
+        for(int i = 0;i<parentObj.transform.childCount;i++)
+        {
+            GameObject go = parentObj.transform.GetChild(i).gameObject;
+            GameObject.Destroy(go);
+        }
     }
 }
